@@ -1,0 +1,11 @@
+{
+  "manifest_version": 3,
+  "name": "Siren-X",
+  "version": "1.0.0",
+  "description": "Forensic misinformation and deceptive AI content detection",
+  "permissions": ["activeTab", "scripting"],
+  "host_permissions": ["http://localhost:5000/*", "https://localhost:5000/*"],
+  "action": {
+    "default_popup": "popup.html"
+  }
+}
