@@ -5,3 +5,5 @@ nmp install
 move to backend file
 run node server.js
 unpack load from chrome browser extension using "extension" file
+
+Contributeres: Dheeraj Jagdeesh, Varshini Kareru, Bhoomi Mehta
