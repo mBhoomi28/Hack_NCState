@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Siren-X</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>SIREN-X</h1>
+      <p class="tagline">Misinformation & Deepfake Intel</p>
+    </header>
+
+    <nav class="tabs">
+      <button type="button" id="tabText" class="tab active">TEXT SCAN</button>
+      <button type="button" id="tabMedia" class="tab">MEDIA SCAN</button>
+    </nav>
+
+    <!-- TEXT SCAN PANEL -->
+    <section id="panelText" class="panel active">
+      <button type="button" id="scanTextBtn" class="btn-scan">SCAN PAGE</button>
+      <p id="textStatus" class="status hidden"></p>
+      <div id="textReport" class="report hidden">
+        <h2>REPORT</h2>
+        <div class="verdict-row">
+          <span id="textVerdict" class="verdict">—</span>
+        </div>
+        <div class="score-block">
+          <label>Risk Score</label>
+          <div class="progress-wrap">
+            <div id="textProgressBar" class="progress-bar" style="width: 0%"></div>
+          </div>
+          <span id="textScoreValue" class="score-value">0</span>
+        </div>
+        <p id="textAnalysis" class="summary">—</p>
+        <div class="patterns-block">
+          <label>Deception flags</label>
+          <div id="textPatterns" class="patterns"></div>
+        </div>
+        <div id="factChecksBlock" class="fact-checks hidden">
+          <label>Verified fact checks</label>
+          <div id="factChecksList" class="fact-checks-list"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MEDIA SCAN PANEL -->
+    <section id="panelMedia" class="panel">
+      <button type="button" id="scanMediaBtn" class="btn-scan">CAPTURE & SCAN</button>
+      <p id="mediaStatus" class="status hidden"></p>
+      <div id="mediaReport" class="report hidden">
+        <h2>DEEPFAKE PROBABILITY</h2>
+        <div class="gauge-wrap">
+          <div class="gauge-bg">
+            <div id="mediaGauge" class="gauge-fill" style="width: 0%"></div>
+          </div>
+          <span id="mediaScoreValue" class="score-value">0%</span>
+        </div>
+        <div class="verdict-row">
+          <span id="mediaVerdict" class="verdict">—</span>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>

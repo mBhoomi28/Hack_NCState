@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "Siren-X",
+  "version": "1.0",
+  "description": "Hackathon Forensic Analyzer",
+  "permissions": ["activeTab", "scripting"],
+  "host_permissions": ["http://localhost:5000/*", "<all_urls>"],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ]
+}
